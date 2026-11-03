@@ -1,0 +1,627 @@
+
+.tilt-rotor-page {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px 24px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  color: #243449;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.tilt-rotor-page * {
+  box-sizing: border-box;
+}
+
+.tilt-rotor-page .tr-project {
+  width: 100%;
+}
+
+/* HERO */
+.tilt-rotor-page .tr-hero {
+  background: #152334;
+  color: white;
+  border-radius: 16px;
+  padding: 48px;
+  margin-bottom: 28px;
+}
+
+.tilt-rotor-page .tr-eyebrow {
+  color: #8fc6e8;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.tilt-rotor-page .tr-hero h1 {
+  color: white;
+  font-size: clamp(28px, 4vw, 46px);
+  line-height: 1.15;
+  margin: 12px 0 18px;
+}
+
+.tilt-rotor-page .tr-lead {
+  color: #d3e0ed;
+  font-size: 17px;
+  max-width: 750px;
+}
+
+/* METRICS */
+.tilt-rotor-page .tr-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 30px;
+}
+
+.tilt-rotor-page .tr-stats > div {
+  background: #293e54;
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.tilt-rotor-page .tr-stats strong {
+  display: block;
+  color: white;
+  font-size: 28px;
+}
+
+.tilt-rotor-page .tr-stats span {
+  display: block;
+  color: #d1dfeb;
+  font-size: 12px;
+}
+
+/* SECTIONS */
+.tilt-rotor-page .tr-section {
+  margin: 52px 0;
+}
+
+.tilt-rotor-page .tr-kicker {
+  color: #2877a5;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.tilt-rotor-page .tr-section h2 {
+  font-size: 30px;
+  color: #152334;
+  margin: 8px 0 18px;
+}
+
+/* IMAGES */
+.tilt-rotor-page .tr-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  margin: 24px 0;
+}
+
+.tilt-rotor-page .tr-figure {
+  margin: 24px 0;
+  width: 100%;
+}
+
+.tilt-rotor-page .tr-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.tilt-rotor-page .tr-figure figcaption {
+  color: #657386;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+/* CALLOUTS */
+.tilt-rotor-page .tr-callout {
+  background: #edf4f9;
+  border-left: 4px solid #2877a5;
+  border-radius: 6px;
+  padding: 22px;
+  margin: 26px 0;
+}
+
+.tilt-rotor-page .tr-callout strong {
+  color: #152334;
+}
+
+/* MOBILE */
+@media (max-width: 700px) {
+  .tilt-rotor-page {
+    padding: 15px;
+  }
+
+  .tilt-rotor-page .tr-hero {
+    padding: 25px;
+  }
+
+  .tilt-rotor-page .tr-grid,
+  .tilt-rotor-page .tr-stats {
+    grid-template-columns: 1fr;
+  }
+}
+/* GOVERNING EQUATION */
+
+.tilt-rotor-page .tr-equation-box {
+  background: #f1f5f9;
+  border-left: 4px solid #2877a5;
+  border-radius: 10px;
+  padding: 28px;
+  margin: 28px 0;
+}
+
+.tilt-rotor-page .tr-equation {
+  text-align: center;
+  overflow-x: auto;
+  padding: 18px 0;
+  font-size: 1.15rem;
+}
+
+/* EXPANDABLE MATLAB CODE */
+
+.tilt-rotor-page .tr-code-details {
+  border: 1px solid #d4dce5;
+  border-radius: 10px;
+  margin: 24px 0;
+  overflow: hidden;
+}
+
+.tilt-rotor-page .tr-code-details summary {
+  background: #152334;
+  color: white;
+  padding: 16px 20px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.tilt-rotor-page .tr-code-content {
+  padding: 18px;
+  background: #f8fafc;
+  overflow-x: auto;
+}
+
+.tilt-rotor-page .tr-code-content pre {
+  margin: 0;
+  white-space: pre;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.tilt-rotor-page .tr-code-link {
+  display: inline-block;
+  background: #2877a5;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 7px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 12px;
+}
+
+.tilt-rotor-page .tr-code-link:hover {
+  background: #195b80;
+  color: white;
+}
+/* PROJECT NAVIGATION */
+
+.tilt-rotor-page .tr-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  gap: 16px;
+}
+
+.tilt-rotor-page .tr-nav-link {
+  display: inline-block;
+  padding: 10px 18px;
+  background: #152334;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+
+.tilt-rotor-page .tr-nav-link:hover {
+  background: #2877a5;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .tilt-rotor-page .tr-navigation {
+    flex-wrap: wrap;
+  }
+}
+.tilt-rotor-page .tr-bottom-navigation {
+  text-align: center;
+  margin: 60px 0 30px;
+  padding-top: 30px;
+  border-top: 1px solid #d4dce5;
+}
+/* FIX NARROW PROJECT PAGE */
+
+.tilt-rotor-page {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.tilt-rotor-page .tr-project {
+  width: 100%;
+  max-width: none;
+  margin: 0 auto;
+}
+
+/* Override narrow default Jekyll containers */
+body:has(.tilt-rotor-page) main,
+body:has(.tilt-rotor-page) article,
+body:has(.tilt-rotor-page) .page__content {
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+/* WIDE TILT-ROTOR PROJECT LAYOUT */
+
+body:has(.tilt-rotor-layout) main,
+body:has(.tilt-rotor-layout) .container,
+body:has(.tilt-rotor-layout) .content {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.tilt-rotor-layout {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.tilt-rotor-layout .tilt-rotor-page,
+.tilt-rotor-layout .tr-project {
+  width: 100%;
+  max-width: none;
+  box-sizing: border-box;
+}
+/* FIX OUTER JEKYLL LAYOUT WIDTH */
+
+body:has(.tilt-rotor-page) .wrapper,
+body:has(.tilt-rotor-page) .container,
+body:has(.tilt-rotor-page) .page-content,
+body:has(.tilt-rotor-page) main,
+body:has(.tilt-rotor-page) article {
+  width: 100% !important;
+  max-width: 1400px !important;
+  box-sizing: border-box;
+}
+
+/* Main project content */
+body:has(.tilt-rotor-page) .tilt-rotor-layout,
+body:has(.tilt-rotor-page) .tilt-rotor-page,
+body:has(.tilt-rotor-page) .tr-project {
+  width: 100% !important;
+  max-width: 1100px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  box-sizing: border-box;
+}/* MATLAB CODE VIEWER */
+
+.tilt-rotor-page .tr-code-details {
+  border: 1px solid #d4dce5;
+  border-radius: 10px;
+  margin: 24px 0;
+  overflow: hidden;
+}
+
+.tilt-rotor-page .tr-code-details summary {
+  background: #152334;
+  color: white;
+  padding: 16px 20px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.tilt-rotor-page .tr-code-content {
+  background: #f8fafc;
+  padding: 20px;
+  overflow-x: auto;
+}
+
+.tilt-rotor-page .tr-code-content pre {
+  margin: 0;
+  white-space: pre;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.tilt-rotor-page .tr-code-link {
+  display: inline-block;
+  background: #2877a5;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 7px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 12px;
+}
+
+.tilt-rotor-page .tr-code-link:hover {
+  background: #195b80;
+  color: white;
+}
+
+/* =============================================
+   TORQUE WRENCH PROJECT PAGE
+   ============================================= */
+
+.tilt-rotor-page .tw-section {
+  margin: 56px 0;
+}
+
+.tilt-rotor-page .tw-section-number {
+  color: #2877a5;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.tilt-rotor-page .tw-section h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.tilt-rotor-page .tw-section h3 {
+  margin-top: 32px;
+  margin-bottom: 14px;
+}
+
+/* Summary metrics */
+
+.tilt-rotor-page .tw-metrics,
+.tilt-rotor-page .tw-requirements {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin: 28px 0;
+}
+
+.tilt-rotor-page .tw-requirements {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.tilt-rotor-page .tw-metric,
+.tilt-rotor-page .tw-requirements > div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px 16px;
+  background: #f3f7fb;
+  border: 1px solid #dce6ef;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.tilt-rotor-page .tw-metric strong,
+.tilt-rotor-page .tw-requirements strong {
+  color: #173a57;
+  font-size: clamp(1.4rem, 2.4vw, 2rem);
+  line-height: 1.15;
+}
+
+.tilt-rotor-page .tw-metric span,
+.tilt-rotor-page .tw-requirements span {
+  color: #506274;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+/* Technical tables */
+
+.tilt-rotor-page .tw-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  margin: 24px 0;
+}
+
+.tilt-rotor-page .tw-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.tilt-rotor-page .tw-table th {
+  background: #173a57;
+  color: white;
+  text-align: left;
+  padding: 13px 16px;
+}
+
+.tilt-rotor-page .tw-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #dce6ef;
+}
+
+.tilt-rotor-page .tw-table tbody tr:nth-child(even) {
+  background: #f5f8fb;
+}
+
+/* Image galleries */
+
+.tilt-rotor-page .tw-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  align-items: start;
+  margin: 24px 0;
+}
+
+.tilt-rotor-page .tw-figure {
+  margin: 24px 0;
+  min-width: 0;
+}
+
+.tilt-rotor-page .tw-gallery .tw-figure {
+  margin: 0;
+}
+
+.tilt-rotor-page .tw-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #dce6ef;
+  border-radius: 10px;
+  background: white;
+  box-sizing: border-box;
+}
+
+.tilt-rotor-page .tw-figure figcaption {
+  margin-top: 10px;
+  color: #657587;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* Equation and results */
+
+.tilt-rotor-page .tw-equation {
+  padding: 20px;
+  margin: 24px 0;
+  border-left: 4px solid #2877a5;
+  background: #f3f7fb;
+  font-family: Georgia, serif;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.tilt-rotor-page .tw-result {
+  display: grid;
+  gap: 8px;
+  padding: 24px;
+  margin: 24px 0;
+  background: #f3f7fb;
+  border-radius: 10px;
+}
+
+.tilt-rotor-page .tw-result span {
+  color: #506274;
+  font-size: 0.9rem;
+}
+
+.tilt-rotor-page .tw-result strong {
+  color: #173a57;
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+
+.tilt-rotor-page .tw-note {
+  color: #657587;
+  font-size: 0.88rem;
+  font-style: italic;
+}
+
+/* Responsive layout */
+
+@media (max-width: 750px) {
+  .tilt-rotor-page .tw-metrics,
+  .tilt-rotor-page .tw-requirements {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .tilt-rotor-page .tw-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 420px) {
+  .tilt-rotor-page .tw-metrics,
+  .tilt-rotor-page .tw-requirements {
+    grid-template-columns: 1fr;
+  }
+}
+/* =========================================
+   MAIN PROJECTS GALLERY
+   ========================================= */
+
+.tilt-rotor-page .projects-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 26px;
+  margin-top: 30px;
+}
+
+.tilt-rotor-page .projects-card {
+  background: #ffffff;
+  border: 1px solid #dce6ef;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 24px rgba(21, 35, 52, 0.07);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tilt-rotor-page .projects-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(21, 35, 52, 0.12);
+}
+
+.tilt-rotor-page .projects-card-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: #edf4f9;
+}
+
+.tilt-rotor-page .projects-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.tilt-rotor-page .projects-card:hover img {
+  transform: scale(1.04);
+}
+
+.tilt-rotor-page .projects-card-body {
+  padding: 26px;
+}
+
+.tilt-rotor-page .projects-card-body h3 {
+  color: #152334;
+  font-size: 23px;
+  line-height: 1.3;
+  margin: 12px 0;
+}
+
+.tilt-rotor-page .projects-card-body p {
+  color: #506274;
+  margin-bottom: 18px;
+}
+
+.tilt-rotor-page .projects-card-body .tr-code-link {
+  margin-top: 8px;
+}
+
+/* Mobile layout */
+
+@media (max-width: 750px) {
+  .tilt-rotor-page .projects-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tilt-rotor-page .projects-card-body {
+    padding: 22px;
+  }
+}

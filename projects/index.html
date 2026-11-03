@@ -1,0 +1,191 @@
+---
+layout: default
+title: Projects
+permalink: /projects/
+---
+
+<link rel="stylesheet" href="{{ '/assets/css/tilt-rotor.css' | relative_url }}">
+
+<style>
+  .portfolio-gallery .pg-intro {
+    max-width: 720px;
+    margin-bottom: 36px;
+  }
+
+  .portfolio-gallery .pg-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    margin-top: 28px;
+  }
+
+  .portfolio-gallery .pg-card {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border: 1px solid #dce6ef;
+    border-radius: 12px;
+    overflow: hidden;
+    text-decoration: none;
+    color: #243449;
+    box-shadow: 0 4px 16px rgba(21, 35, 52, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .portfolio-gallery .pg-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(21, 35, 52, 0.12);
+    color: #243449;
+  }
+
+  .portfolio-gallery .pg-card-image {
+    height: 220px;
+    background: #edf4f9;
+    overflow: hidden;
+  }
+
+  .portfolio-gallery .pg-card-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .portfolio-gallery .pg-card-placeholder {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e8f0f6;
+    color: #2877a5;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .portfolio-gallery .pg-card-body {
+    padding: 26px;
+  }
+
+  .portfolio-gallery .pg-card h3 {
+    color: #152334;
+    font-size: 23px;
+    line-height: 1.3;
+    margin: 12px 0;
+  }
+
+  .portfolio-gallery .pg-card p {
+    color: #506274;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+
+  .portfolio-gallery .pg-link {
+    color: #2877a5;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  @media (max-width: 750px) {
+    .portfolio-gallery .pg-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .portfolio-gallery .pg-card-image {
+      height: 200px;
+    }
+  }
+</style>
+
+<div class="tilt-rotor-page portfolio-gallery">
+  <div class="tr-project">
+
+    <!-- HEADER -->
+
+    <header class="tr-hero">
+      <div class="tr-eyebrow">ENGINEERING PORTFOLIO</div>
+
+      <h1>Selected Projects</h1>
+
+      <p class="tr-lead">
+        Mechanical engineering projects exploring aerospace systems,
+        structural analysis, robotics, and manufacturing.
+      </p>
+    </header>
+
+    <!-- PROJECT GALLERY -->
+
+    <section class="tr-section">
+
+      <div class="tr-kicker">DESIGN · ANALYSIS · FABRICATION</div>
+
+      <h2>Explore My Work</h2>
+
+      <p class="pg-intro">
+        Each project highlights the engineering decisions,
+        technical challenges, and lessons learned throughout
+        the design process.
+      </p>
+
+      <div class="pg-grid">
+
+        {% assign sorted_projects = site.projects | sort: "order" %}
+
+        {% for project in sorted_projects %}
+
+          <a class="pg-card" href="{{ project.url | relative_url }}">
+
+            <div class="pg-card-image">
+
+              {% if project.image %}
+                <img
+                  src="{{ project.image | relative_url }}"
+                  alt="{{ project.title | escape }}"
+                >
+              {% else %}
+                <div class="pg-card-placeholder">
+                  Engineering Project
+                </div>
+              {% endif %}
+
+            </div>
+
+            <div class="pg-card-body">
+
+              <div class="tr-kicker">
+                {% if project.technologies %}
+                  {{ project.technologies | join: " · " }}
+                {% else %}
+                  ENGINEERING DESIGN
+                {% endif %}
+              </div>
+
+              <h3>{{ project.title }}</h3>
+
+              <p>
+                {% if project.description %}
+                  {{ project.description }}
+                {% else %}
+                  Explore the design process, technical analysis,
+                  and engineering outcomes of this project.
+                {% endif %}
+              </p>
+
+              <span class="pg-link">
+                View Project →
+              </span>
+
+            </div>
+
+          </a>
+
+        {% endfor %}
+
+      </div>
+
+    </section>
+
+  </div>
+</div>

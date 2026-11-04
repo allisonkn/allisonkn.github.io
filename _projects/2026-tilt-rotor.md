@@ -38,7 +38,7 @@ window.MathJax = {
 
   <figure class="tr-figure">
     <img
-  src="/fa25-portfolio-allisonkn/assets/images/tilt-rotors-gallery/tilt-rotor-side-closeup.png"
+  src="/assets/images/tilt-rotors-gallery/tilt-rotor-side-closeup.png"
   alt="Tilt-rotor assembly on Atlas">
     <figcaption>CUAir hybrid eVTOL tilt-rotor system mounted on test-plane, Atlas.</figcaption>
   </figure>
@@ -146,7 +146,7 @@ disp(M_P_B);
     <div class="tr-grid">
   <figure class="tr-figure">
     <img
-      src="/fa25-portfolio-allisonkn/assets/images/tilt-rotors-gallery/tilt-rotor-closeup-1.png"
+      src="/assets/images/tilt-rotors-gallery/tilt-rotor-closeup-1.png"
       alt="Previous tilt-rotor design">
     <figcaption>Previous design.</figcaption>
   </figure>
